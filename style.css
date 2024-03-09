@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    background-color: beige;
+}
+
+.container {
+    width: 70%;
+    height: 90vh;
+}
+
+.msg-body {
+    height: 90%;
+    background-color: grey;
+    overflow-y: scroll;
+    display: block;
+    border: 1px solid black;
+}
+
+.strip {
+    height: 10%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.msg-txt {
+    width: 85%;
+    background-color: rgb(204, 195, 195);
+    border: 1px solid green;
+    border-radius: 30px;
+    text-indent: 10px;
+}
+
+.send-btn {
+    width: 15%;
+    border: none;
+    border: 1px solid green;
+    border-radius: 30px;
+
+}
+
+.chat-msg {
+    width: 100%;
+    height: fit-content;
+    overflow-wrap: break-word;
+    text-indent: 5px;
+    
+}
