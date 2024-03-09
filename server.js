@@ -5,7 +5,7 @@ import { dirname, join } from 'path'
 import { Server } from 'socket.io'
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const server = createServer(app);
@@ -68,6 +68,6 @@ io.on('connection', (socket) => {
 
 
 
-server.listen(3000, () => {
-    console.log("http://localhost:" + PORT)
+server.listen(PORT, () => {
+    
 })
